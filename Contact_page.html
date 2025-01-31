@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBlue: '#0F2137',
+                        darkGreen: '#0A8080',
+                        liteBlack:'#343D48',
+                        liteBlackE:'#7E8896',
+                        darkBrown:'#A17857',
+                        liteBlue:'#7589A1',
+                        liteBrown:'#FBF5F1',
+                        contactUs: '#1F1F1F',
+                    },
+                    fontSize: {
+                        heading: '200px'
+                    },
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>    
+</head>
+
+<body>
+    <header class="flex justify-between items-center px-16 py-4">
+        <div> <img src="logo-1.png" alt="startup landing page"></div>
+        <div>
+            <nav class="space-x-10 font-semibold text-gray-600 mr-44">
+                <a href="#" class="hover:text-gray-800">Pricing</a>
+                <a href="#" class="hover:text-gray-800">Support</a>
+                <a href="#" class="hover:text-gray-800">Register</a>
+                <a href="#" class="text-green-500 font-bold">Get Started</a>
+            </nav>
+        </div> 
+    </header>
+    <div class="bg-[#FFF7F5]">
+        <div class="flex flex-row gap-x-7 mt-[5rem] ml-[10rem]">
+            <div class="w-[5rem] border-t-2 border-contactUs my-4"></div>
+            <h1 class="text-contactUs text-2xl font-bold">Contact Us</h1>
+        </div>
+
+        <div class="flex flex-row gap-x-[15rem] mt-[5rem] ml-[10rem]">
+            <div class="flex flex-row gap-x-5">
+                <img src="location.png" class="w-[4.375rem] h-[4.375rem]">
+                <div>
+                    <h1 class="text-contactUs text-xl font-bold">Address</h1>
+                    <h1 class="text-contactUs text-lg font-medium">Jaipur Rajasthan INDIA</h1>
+                    <h1 class="text-contactUs text-lg font-medium">Pin 342087</h1>
+                </div>
+            </div>
+            <div class="flex flex-row gap-x-5">
+                <img src="phone.png" class="w-[4.375rem] h-[4.375rem]">
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-contactUs text-xl font-bold">Call Us</h1>
+                    <p class="text-contactUs text-lg font-medium whitespace-nowrap">+91 98765 43210</p>
+                </div>
+            </div>
+            <div class="flex flex-row gap-x-5">
+                <img src="mail.png" class="w-[4.375rem] h-[4.375rem]">
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-contactUs text-xl font-bold">Email Us</h1>
+                    <p class="text-contactUs text-lg font-medium whitespace-nowrap">info@test.com</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+    
+    <div class="container w-full min-h-screen bg-white mt-[5rem] flex flex-col items-center p-7">
+        <h1 class="text-center font-semibold text-2xl mt-[40]">
+            Get in touch with us.
+            <span class="block mt-1">We're here to assist you.</span>
+        </h1>
+        <div class="container w-[63.3125rem] h-[69.9375rem] p-10 bg-[#F9FAFC] shadow-md rounded-lg text-center mt-8">
+            <form class="grid grid-cols-2 gap-[5rem]">
+                <div class="text-left">
+                    <label class="block text-gray-700 ml-0">Full name</label>
+                    <input type="text" value="Ram Kumar Sharma" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">Email address</label>
+                    <input type="email" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">Phone number</label>
+                    <input type="text" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">Date of birth</label>
+                    <input type="date" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">Gender</label>
+                    <input type="text" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">City</label>
+                    <input type="text" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">State</label>
+                    <input type="text" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">Country</label>
+                    <input type="text" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">Address</label>
+                    <input type="text" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-700">Message</label>
+                    <input type="text" class="w-full border-b-2 p-2 focus:outline-none">
+                </div>
+                
+                <div class="text-left">
+                    <label class="block text-gray-700">Request a counselling session</label>
+                    <div class="flex items-center space-x-4  mt-[2rem]">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="radio" name="counseling" value="yes" class="hidden peer" checked>
+                            <div class="w-5 h-5 border-2 border-[#28DDB2] rounded-full flex items-center justify-center
+                             peer-checked:bg-[#28DDB2] peer-checked:border-[#D9F0EB]">
+                            </div>
+                            <span class="text-gray-700">Yes</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="radio" name="counseling" value="no" class="hidden peer">
+                            <div class="w-5 h-5 border-2 border-[#28DDB2] rounded-full flex items-center justify-center 
+                            peer-checked:bg-[#28DDB2] peer-checked:border-[#D9F0EB]">
+                            </div>
+                            <span class="text-gray-700">No</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="text-left">
+                    <label class="block text-gray-500 text-sm">Upload your CV/Resume</label>
+                    <div class="flex items-center border-b border-gray-300 py-2 cursor-pointer">
+                        <label for="file-upload" class="flex items-center cursor-pointer">
+                            <img src="cloud.png" alt="Upload Icon" class="w-4 h-4 text-gray-400 mr-2">
+                            <span class="text-gray-500 text-sm">Choose file</span>
+                        </label>
+                        <input type="file" id="file-upload" class="hidden">
+                    </div>
+                </div>                
+                <div class="col-span-2 flex items-center space-x-2">
+                    <input type="checkbox" class="w-5 h-5 appearance-none border-2 border-[#28DDB2] rounded-md checked:bg-[#28DDB2] checked:border-[#28DDB2] checked:before:content-['✔'] checked:before:text-white checked:before:flex checked:before:items-center checked:before:justify-center checked:before:w-full checked:before:h-full">
+                    <label class="text-gray-700">Agree to terms and conditions</label>
+                </div>                
+            
+                    <button type="submit" class="w-[25rem] bg-[#28DDB2] text-white py-3 rounded">Submit Information</button>
+                
+            </form>
+        </div>
+    </div>
+    <img src="map.png" class="w-[74.5rem] h-[33rem] ml-[10rem] mt-[10rem]">
+    <div class="bg-[#FFF7F5]">
+        <div class="text-center mt-[20vh]">
+            <h1 class="text-darkBlue font-bold text-4xl leading-tight">
+                Subscribe to Our Newsletter
+                <span class="block mt-3"> for Design Insights</span>
+            </h1>
+            <p class="text-darkBlue mt-5 text-lg">
+                Be the first to discover trends, inspirations, and special offers as we 
+                <span class="block mt-3">bring the world of design directly to your inbox</span>
+            </p>
+        </div>
+        <div class="relative w-[40rem] ml-[25rem] mt-[5rem]">
+            <div class="flex items-center border border-[#28DDB2]  overflow-hidden w-full">
+                <div class="flex items-center px-4">
+                    <img src="smallmail.png" alt="Email Icon" class="w-5 h-5 text-gray-400">
+                </div>
+                <input type="email" placeholder="Enter your email address" class="w-full p-3 pr-28 text-gray-600 focus:outline-none h-16">
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#28DDB2] text-white font-medium px-5 py-2 w-[10rem] h-[3rem]">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center mt-[20vh]">
+        
+<!-- FAQ's section begin here-->
+
+
+<div class="bg-white">
+    <div class="text-center mt-[20vh]">
+        <h1 class="text-darkBlue font-semibold text-xl leading-tight">Do you have any quesiton</h1>
+        <p class="text-darkBlue mt-5 text-sm">Our support team ready to help you, please contact with them</p>
+    </div>
+    <div class="flex flex-col gap-y-4 ml-[25rem] mt-[5rem]">
+        <div class="flex flex-row gap-x-4">
+            <button class="w-5 h-5 flex items-center justify-center bg-[#3FDBB1] text-white rounded-full">
+                <span class="text-xl font-bold">+</span>
+            </button>
+            <h1 class="text-darkBlue font-semibold text-sm">How to contact with riders emergency ?</h1>
+        
+        </div>
+        <div class="w-[45rem] border-t-2 border-grey-400 my-4 "></div>
+        <div class="flex flex-row gap-x-4">
+            <button class="w-5 h-5 flex items-center justify-center bg-[#3FDBB1] text-white rounded-full">
+                <span class="text-xl font-bold">+</span>
+            </button>
+            <h1 class="text-darkBlue font-semibold text-sm">App installation failed, how to update system information?</h1>
+        
+        </div>
+        <div class="w-[45rem] border-t-2 border-grey-400 my-4 "></div>
+        <div class="flex flex-row gap-x-4">
+            <button class="w-5 h-5 flex items-center justify-center bg-[#3FDBB1] text-white rounded-full">
+                <span class="text-xl font-bold">-</span>
+            </button>
+            <div>
+                <h1 class="text-darkBlue font-semibold text-sm text-start">Website reponse taking time, how to improve?</h1>
+                <p class="text-darkBlue mt-5 text-sm text-start">Get your blood tests delivered at the home collect a sample from management news. Get your  
+                    <span class="block mt-3"> blood tests delivered at the home collect a sample from management news. Get your blood</span>
+                    <span class="block mt-3"> tests delivered at the home collect a sample from management news. Get your blood tests</span>
+                    <span class="block mt-3"> delivered at the home.</span>
+                </p>
+            </div>
+            
+        </div>
+        <div class="w-[45rem] border-t-2 border-grey-400 my-4 "></div>
+        <div class="flex flex-row gap-x-4">
+            <button class="w-5 h-5 flex items-center justify-center bg-[#3FDBB1] text-white rounded-full">
+                <span class="text-xl font-bold">+</span>
+            </button>
+            <h1 class="text-darkBlue font-semibold text-sm">New update fixed all bug and issues</h1>
+        
+        </div>
+        <div class="w-[45rem] border-t-2 border-grey-400 my-4 "></div>
+    </div>
+
+    <!-- FAQ's end here-->
+
+    
+</div>
+<!-- footer begins here-->
+<div class="bg-gray-100">
+    <footer class="w-full text-gray-700 text-sm py-10">
+        <div class="max-w-screen-xl mx-auto px-5">
+            <!-- Footer Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-start">
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold">Company</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">About</a></li>
+                        <li><a href="#" class="hover:underline">Affiliate</a></li>
+                        <li><a href="#" class="hover:underline">Careers & Culture</a></li>
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                        <li><a href="#" class="hover:underline">Press</a></li>
+                    </ul>
+                </div>
+                
+                <!-- About Us -->
+                <div>
+                    <h3 class="font-semibold">About Us</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Support Center</a></li>
+                        <li><a href="#" class="hover:underline">Customer Support</a></li>
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Copyright</a></li>
+                        <li><a href="#" class="hover:underline">Popular Campaign</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Information -->
+                <div>
+                    <h3 class="font-semibold">Our Information</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Return Policy</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:underline">Site Map</a></li>
+                        <li><a href="#" class="hover:underline">Store Hours</a></li>
+                    </ul>
+                </div>
+
+                <!-- My Account -->
+                <div>
+                    <h3 class="font-semibold">My Account</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Press Inquiries</a></li>
+                        <li><a href="#" class="hover:underline">Social Media</a></li>
+                        <li><a href="#" class="hover:underline">Directories</a></li>
+                        <li><a href="#" class="hover:underline">Images & B-roll</a></li>
+                        <li><a href="#" class="hover:underline">Permissions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policy -->
+                <div>
+                    <h3 class="font-semibold">Policy</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Application Security</a></li>
+                        <li><a href="#" class="hover:underline">Software Principles</a></li>
+                        <li><a href="#" class="hover:underline">Unwanted Software Policy</a></li>
+                        <li><a href="#" class="hover:underline">Responsible Supply Chain</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="mt-10 flex flex-col md:flex-row items-center md:items-start justify-between border-t pt-5">
+                <!-- Logo & Copyright -->
+                <div class="flex items-center space-x-2">
+                    <img src="logo-1.png" alt="StartupLanding Logo" class="w-[12.2rem] h-[2.3rem]">
+                    <span class="text-gray-600 text-center md:text-left break-words">StartupLanding &copy; 2019 YourName, Inc</span>
+                </div>
+
+                <!-- Footer Links -->
+                <ul class="flex flex-wrap justify-center md:justify-end space-x-3 mt-4 md:mt-0">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Advertise</a></li>
+                    <li><a href="#" class="hover:underline">Supports</a></li>
+                    <li><a href="#" class="hover:underline">Marketing</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- footer ends here-->
+</body>
+</html>
